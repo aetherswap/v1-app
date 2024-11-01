@@ -88,5 +88,5 @@ export function useLPFeesInfo(currencies: [Currency | undefined, Currency | unde
 
           return memo
       }, [])
-  }, [tokens, pairAddresses, feesAddresses, claimableFees])
+  }, [account, chainId, currencies.length, tokens, pairAddresses, feesAddresses, claimableFees])
 }

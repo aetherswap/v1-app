@@ -58,9 +58,9 @@ export default function CommonBases({
           }}
           disable={selectedCurrency?.isNative}
         >
-          <CurrencyLogo currency={ETH} style={{ marginRight: 8 }} />
+          <CurrencyLogo currency={CANTO} style={{ marginRight: 8 }} />
           <Text fontWeight={500} fontSize={16}>
-            {ETH.symbol}
+            {CANTO.symbol}
           </Text>
         </BaseWrapper>
         {(typeof chainId === 'number' ? SUGGESTED_BASES[chainId] ?? [] : []).map((token: Token) => {

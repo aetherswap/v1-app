@@ -11,8 +11,8 @@ import JSBI from 'jsbi'
 // const usdcCurrencyAmount = CurrencyAmount.fromRawAmount(USDC[ChainId.MAINNET], 100_000e6)
 // @TODO: change back, but to bootstrap we dont have enought liquidity
 const usdcCurrencyAmount = {
-  [ChainId.MAINNET]: CurrencyAmount.fromRawAmount(USDC[ChainId.MAINNET], 100e6),
   [ChainId.TESTNET]: CurrencyAmount.fromRawAmount(USDC[ChainId.TESTNET], 100e6),
+  [ChainId.MAINNET]: CurrencyAmount.fromRawAmount(USDC[ChainId.MAINNET], 100e6),
 }
 /**
  * Returns the price in USDC of the input currency
